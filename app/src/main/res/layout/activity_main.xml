@@ -6,24 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.example.autocount.vehicleparking.MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Slots: "
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:id="@+id/slot"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/slot_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="80sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/slot"
+        android:textColor="#24282d"
+        />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Scan"
         android:id="@+id/scan_btn"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        android:layout_below="@+id/slot_numbers"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"/>
 
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scan_btn"
-        android:layout_marginTop="5dp"
-        android:layout_centerHorizontal="true"
-        android:textSize="25sp"
-        android:padding="5dp"
-        android:gravity="center_horizontal"/>
 
 
 </RelativeLayout>
